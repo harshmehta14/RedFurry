@@ -6,3 +6,6 @@
 
 ### Most assistance interaction is human hence our specifically trained model mitigates the need for such counter productive interactions
 
+
+## Main Page
+![img_1](https://github.com/harshmehta14/RedFurry/blob/master/src/img/bg.png)
