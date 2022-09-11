@@ -8,4 +8,4 @@
 
 
 ## Main Page
-
+![img_1](https://github.com/harshmehta14/RedFurry/blob/master/src/img/img_1.jpeg)
