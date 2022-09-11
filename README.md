@@ -9,3 +9,9 @@
 
 ## Main Page
 ![img_1](https://github.com/harshmehta14/RedFurry/blob/master/src/img/img_1.jpeg)
+This is where you login to enter
+
+## Page
+### Here, in this page you can communicate with the our model for accurate suggestions and results<br>
+### We gave it an example text to work with for better understanding
+![img_2](https://github.com/harshmehta14/RedFurry/blob/master/src/img/img_2.jpeg)
