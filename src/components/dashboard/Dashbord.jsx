@@ -1,7 +1,24 @@
 import React from 'react'
 import "./dashboard.css"
+import { useNavigate } from 'react-router-dom'
 
 const Dashbord = () => {
+
+    const naigate = useNavigate()
+
+    const redirectrest = () =>{
+            naigate("/restaurant")
+    }
+    const redirecttemp = () =>{
+        naigate("/temples")
+    }
+    const redirectstn = () =>{
+        naigate("/chargestation")
+    }
+    const redirectrspm = () =>{
+        naigate("/supermarket")
+    }
+
   return (
     <div className='Dashbord'>
         <div className='inner-div'>
@@ -10,13 +27,16 @@ const Dashbord = () => {
             </div>
             <div className="middle-part">
                 <div className='button-div' >
-                <button type="button" className="btn btn-secondary">Option 1</button>
+                <button  onClick={redirectrest} type="button" className="btn btn-secondary">Restaurant</button>
                 </div>
                 <div className='button-div' >
-                <button type="button" className="btn btn-secondary">Option 2</button>
+                <button onClick={redirecttemp} type="button" className="btn btn-secondary">Temples</button>
                 </div>
                 <div className='button-div' >
-                <button type="button" className="btn btn-secondary">Option 3</button>
+                <button onClick={redirectstn} type="button" className="btn btn-secondary">Chargestations</button>
+                </div>
+                <div className='button-div' >
+                <button onClick={redirectrspm} type="button" className="btn btn-secondary">Supermarket</button>
                 </div>
             </div>
             <div className="bottem-part">

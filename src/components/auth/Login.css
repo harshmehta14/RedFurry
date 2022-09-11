@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
+.Container{
     height: 100vh;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    background: rgb(115, 138, 204);
 }
 
 .Login{
@@ -17,7 +16,7 @@ body{
  height: min-content;
  padding: 50px;
  border-radius: 12px;
- background: rgb(255, 255, 255);   
+ background: rgba(255, 218, 185, 0.753);  
 }
 
 .Login h1{

@@ -1,17 +1,23 @@
 import { useState} from "react";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
+import bgLogin from "../../img/bg.png"
 
 const Login = () => {
     const [email , setEmail] = useState()
     const [password , setPassword] = useState()
 
+    const navigate = useNavigate()
+
     const handlesubmit = (e) => {
       e.preventDefault()
       console.log(email , password);
+      navigate("/")
     }
 
   return (
-    <div className="Login">
+    <div className="Container">
+      <div className="Login">
       <h1 className="text-center">Welcome</h1>
       <form  onSubmit={handlesubmit} className="needs-validation">
         <div className="form-group was-validated">
@@ -35,12 +41,6 @@ const Login = () => {
           />
           <div className="invalid-feedback">Please enter your password</div>
         </div>
-        <div className="form-group form-check">
-          <input className="form-check-input" type="checkbox" id="check" />
-          <label className="form-check-label" htmlFor="check">
-            Remember me
-          </label>
-        </div>
         <input
           className="btn btn-success w-100"
           data-bs-toggle="button"
@@ -49,6 +49,11 @@ const Login = () => {
         />
       </form>
     </div>
+    <div>
+      <img src={bgLogin} alt="" height={600} width={600} />
+    </div>
+    </div>
+    
   );
 };
 

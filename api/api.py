@@ -10,14 +10,14 @@ openai.api_key = API_KEY
 
 # Recieves POST requests and finds the sentiment of statment and returns it
 # the body recieved from post request should have a {text_message:message} as a parameter
-@app.route('/sentiment', methods = ['POST'])
-def sentiment():
-	req_data =request.get_json()
-	res = openai.Completion.create(
-	engine="text-davinci-002",
-	prompt=req_data["text_message"],
-	)
-	return jsonify({'data': res["data"]["choices"][0]["text"]})
+# @app.route('/sentiment', methods = ['POST'])
+# def sentiment():
+# 	req_data =request.get_json()
+# 	res = openai.Completion.create(
+# 	engine="text-davinci-002",
+# 	prompt=req_data["text_message"],
+# 	)
+# 	return jsonify({'data': res["data"]["choices"][0]["text"]})
 
 
 # Recieves POST requests and finds the solution of statment and returns it
@@ -27,8 +27,10 @@ def home():
 	res = openai.Completion.create(
 	engine="text-davinci-002",
 	prompt=req_data["text_message"],
+	max_tokens=500,
 	)
-	return jsonify({'data': res["data"]["choices"][0]["text"]})
+	print(res)
+	return jsonify({'data': res})
 
 # Running the flask api
 if __name__ == '__main__':
