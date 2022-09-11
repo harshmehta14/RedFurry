@@ -1,0 +1,38 @@
+.Dashbord{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-div{
+    width: 80%;
+    height: 84vh;
+    /* background-color: antiquewhite; */
+    border: 3px solid black ;
+    border-radius: 25px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 3px 2px 5px;
+}
+.middle-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.paragraph{
+    text-align: center;
+}
+
+.upper-para{
+    width: 100%;
+}
+
+.bottem-part{
+    width: 100%;
+}
