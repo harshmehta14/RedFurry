@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Temples = () => {
-  return (
-    <div>Temples</div>
-  )
-}
+  return <div>Saloon</div>;
+};
 
-export default Temples
+export default Temples;
